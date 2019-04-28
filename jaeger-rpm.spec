@@ -8,6 +8,7 @@ Summary: CNCF Jaeger, a Distributed Tracing System
 Group:   Development Tools
 License: ASL 2.0
 URL: https://github.com/jaegertracing/jaeger/releases/download/v%{version}/jaeger-%{version}-linux-amd64.tar.gz
+BuildRequires: tree
 
 %description
 Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system released as open source by Uber Technologies.
@@ -15,6 +16,9 @@ Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system relea
 %prep
 curl -L %{url} > jaeger-linux-amd64.tar.gz
 tar -zxf jaeger-linux-amd64.tar.gz
+pwd
+ls
+tree
 
 %package agent
 Summary: jaeger agent
@@ -43,6 +47,9 @@ Summary: jaeger query
 
 %install
 # agent
+pwd
+ls
+tree
 install jaeger-agent %{buildroot}/%{_bindir}
 
 # all-in-one
