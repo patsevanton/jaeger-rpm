@@ -46,6 +46,7 @@ Summary: jaeger query
 %description query
 
 %install
+install -d %{buildroot}/%{_bindir}
 # agent
 pwd
 ls
