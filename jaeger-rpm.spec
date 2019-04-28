@@ -31,6 +31,16 @@ Summary: jaeger ingester
 %package query
 Summary: jaeger query
 
+%description agent
+
+%description all-in-one
+
+%description collector
+
+%description ingester
+
+%description query
+
 %install
 # agent
 install jaeger-agent %{buildroot}/%{_bindir}
