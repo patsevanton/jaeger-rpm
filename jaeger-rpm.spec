@@ -67,16 +67,16 @@ install jaeger-1.11.0-linux-amd64/jaeger-query %{buildroot}%{_bindir}
 
 
 %files agent
-%attr(755, root, root) %{_bindir}/agent
+%attr(755, root, root) %{_bindir}/jaeger-agent
 
 %files all-in-one
-%attr(755, root, root) %{_bindir}/all-in-one
+%attr(755, root, root) %{_bindir}/jaeger-all-in-one
 
 %files collector
-%attr(755, root, root) %{_bindir}/collector
+%attr(755, root, root) %{_bindir}/jaeger-collector
 
 %files ingester
-%attr(755, root, root) %{_bindir}/ingester
+%attr(755, root, root) %{_bindir}/jaeger-ingester
 
 %files query
-%attr(755, root, root) %{_bindir}/query
+%attr(755, root, root) %{_bindir}/jaeger-query
