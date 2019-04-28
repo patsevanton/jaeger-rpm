@@ -50,19 +50,19 @@ Summary: jaeger query
 pwd
 ls
 tree
-install jaeger-1.11.0-1.x86_64/jaeger-agent %{buildroot}%{_bindir}
+install jaeger-1.11.0-linux-amd64/jaeger-agent %{buildroot}%{_bindir}
 
 # all-in-one
-install jaeger-1.11.0-1.x86_64/jaeger-all-in-one %{buildroot}%{_bindir}
+install jaeger-1.11.0-linux-amd64/jaeger-all-in-one %{buildroot}%{_bindir}
 
 # collector
-install jaeger-1.11.0-1.x86_64/jaeger-collector %{buildroot}%{_bindir}
+install jaeger-1.11.0-linux-amd64/jaeger-collector %{buildroot}%{_bindir}
 
 # ingester
-install jaeger-1.11.0-1.x86_64/jaeger-ingester %{buildroot}%{_bindir}
+install jaeger-1.11.0-linux-amd64/jaeger-ingester %{buildroot}%{_bindir}
 
 # query
-install jaeger-1.11.0-1.x86_64/jaeger-query %{buildroot}%{_bindir}
+install jaeger-1.11.0-linux-amd64/jaeger-query %{buildroot}%{_bindir}
 
 
 %files agent
